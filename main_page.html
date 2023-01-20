@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Technical Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<main id="main-doc">
+		<header>
+			<nav id="navbar">
+				<header>JavaScript and Java</header>
+				<a class="nav-link" href="#Introduction">Introduction</a>
+				<a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+				<a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+				<a class="nav-link" href="#Hello_world">Hello world</a>
+				<a class="nav-link" href="#Variables">Variables</a>
+				<a class="nav-link" href="#Data_types">Data types</a>
+				<a class="nav-link" href="#Operators">Operators</a>
+				<a class="nav-link" href="#Functions">Functions</a>
+			</nav>
+		</header>
+		<section class="main-section" id="Introduction">
+			<header>Introduction</header>
+			<p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
+				language.
+				Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of
+				its
+				environment to provide programmatic control over them.</p>
+			<p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+				language
+				elements such as operators, control structures, and statements. Core JavaScript can be extended for a
+				variety
+				of purposes by supplementing it with additional objects; for example:</p>
+			<ul>
+				<li>Client-side JavaScript extends the core language by supplying objects to control a browser and its
+					Document Object Model (DOM). For example, client-side extensions allow an application to place
+					elements
+					on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.
+				</li>
+				<li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript
+					on
+					a server. For example, server-side extensions allow an application to communicate with a database,
+					provide
+					continuations of the execution of a script, or perform file manipulations on a server.</li>
+			</ul>
+		</section>
+		<section class="main-section" id="What_you_should_already_know">
+			<header>What you should already know</header>
+			<p>This guide assumes you have the following basic background:</p>
+			<ul>
+				<li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+				<li>Good working knowledge of HyperText Markup Language (HTML).</li>
+				<li>Some programming experience. If you are new to programming, try
+					<a href="https://www.codecademy.com/learn/introduction-to-javascript">JavaScript
+						basics</a> to learn the basics of programming and JavaScript.
+				</li>
+			</ul>
+			<p>It also helps to have the following application software installed:</p>
+			<ul>
+				<li>A text editor or integrated development environment (IDE) that can edit plain text.</li>
+				<li>A recent version of a web browser such as Firefox or Chrome.</li>
+			</ul>
+		</section>
+		<section class="main-section" id="JavaScript_and_Java">
+			<header>
+				<h1 id="JavaScript_and_Java">JavaScript and Java</h1>
+			</header>
+			<p>JavaScript and Java are similar in some ways but fundamentally different in some others. The
+				following
+				table highlights the main differences between the two languages:</p>
+			<table>
+				<tr>
+					<th>JavaScript</th>
+					<th>Java</th>
+				</tr>
+				<tr>
+					<td>JavaScript is a lightweight, interpreted programming language.</td>
+					<td>Java is a class-based, object-oriented programming language.</td>
+				</tr>
+				<tr>
+					<td>JavaScript is designed for creating network-centric applications.</td>
+					<td>Java is designed to be a "write once, run anywhere" language.</td>
+				</tr>
+				<tr>
+					<td>JavaScript is complementary to and integrated with HTML.</td>
+					<td>Java is intended to let application developers "write once, run anywhere" (WORA), meaning that
+						compiled Java code can run on all platforms that support Java without the need for
+						recompilation.
+					</td>
+				</tr>
+				<tr>
+					<td>JavaScript is open and cross-platform.</td>
+					<td>Java is intended to let application developers "write once, run anywhere" (WORA), meaning that
+						compiled Java code can run on all platforms that support Java without the need for
+						recompilation.
+					</td>
+				</tr>
+				<tr>
+					<td>JavaScript has object-oriented capabilities that allow you to build interactivity into otherwise
+						static HTML pages.</td>
+					<td>Java is a compiled language. If you write Java code, you will need to compile it into bytecode
+						that
+						can run on any Java virtual machine (JVM) regardless of the underlying computer architecture.
+					</td>
+				</tr>
+				<tr>
+					<td>JavaScript is weakly typed.</td>
+					<td>Java is strongly typed.</td>
+				</tr>
+				<tr>
+					<td>JavaScript does not support multithreading or networking.</td>
+					<td>Java supports multithreading and networking.</td>
+				</tr>
+			</table>
+		</section>
+		<section class="main-section" id="Hello_world">
+			<header>
+				<h1 id="Hello_world">Hello world</h1>
+			</header>
+			<p>Let's start with a simple example. The following code displays "Hello World" in an alert box:</p>
+			<pre><code class="language-javascript">alert("Hello World");</code></pre>
+			<p>Save the code above in a file named "hello.js" and open it in a browser. You should see an alert box
+				that
+				says "Hello World".</p>
+			<p>Try it yourself »</p>
+		</section>
+		<section class="main-section" id="Variables">
+			<header>
+				<h1 id="Variables">Variables</h1>
+			</header>
+			<p>Variables are containers for storing data values.</p>
+			<p>In this example, x, y, and z, are variables:</p>
+			<pre><code class="language-javascript">var x = 5;
+var y = 6;
+var z = x + y;</code></pre>
+			<p>JavaScript uses the keyword <code>var</code> to declare a variable.</p>
+			<p>After the declaration, the variable has no value (technically it has the value of
+				<code>undefined</code>).
+				To assign a value to the variable, use the equal sign:
+			</p>
+			<pre><code class="language-javascript">var x = 5;</code></pre>
+			<p>Now x has the value of 5.</p>
+			<p>JavaScript is a <strong>dynamically typed</strong> language. This means that the same variable can be
+				used
+				to hold different data types:</p>
+			<pre><code class="language-javascript">var x; // Now x is undefined
+x = 5; // Now x is a Number
+x = "John"; // Now x is a String</code></pre>
+			<p>JavaScript uses the keyword <code>let</code> to declare a variable.</p>
+			<p>After the declaration, the variable has no value (technically it has the value of
+				<code>undefined</code>).
+				To assign a value to the variable, use the equal sign:
+			</p>
+			<pre><code class="language-javascript">let x = 5;</code></pre>
+			<p>Now x has the value of 5.</p>
+			<p>JavaScript is a <strong>dynamically typed</strong> language. This means that the same variable can be
+				used
+				to hold different data types:</p>
+			<pre><code class="language-javascript">let x; // Now x is undefined
+x = 5; // Now x is a Number
+x = "John"; // Now x is a String</code></pre>
+			<p>JavaScript uses the keyword <code>const</code> to declare a variable.</p>
+			<p>After the declaration, the variable has no value (technically it has the value of
+				<code>undefined</code>).
+				To assign a value to the variable, use the equal sign:
+			</p>
+			<pre><code class="language-javascript">const x = 5;</code></pre>
+			<p>Now x has the value of 5.</p>
+			<p>JavaScript is a <strong>dynamically typed</strong> language. This means that the same variable can be
+				used
+				to hold different data types:</p>
+			<pre><code class="language-javascript">const x; // Now x is undefined
+x = 5; // Now x is a Number
+x = "John"; // Now x is a String</code></pre>
+		</section>
+		<section class="main-section" id="Data_types">
+			<header>
+				<h1 id="Data_types">Data types</h1>
+			</header>
+			<p>JavaScript variables can hold many data types: numbers, strings, objects and more:</p>
+			<table class="table table-bordered">
+				<tr>
+					<th style="width:10%">Data Type</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Number</td>
+					<td>Numbers can be written with, or without decimals:</td>
+				</tr>
+				<tr>
+					<td>String</td>
+					<td>Strings must be written within quotes:</td>
+				</tr>
+				<tr>
+					<td>Boolean</td>
+					<td>Booleans can only have two values: true or false.</td>
+				</tr>
+				<tr>
+					<td>Array</td>
+					<td>Arrays are used to store multiple values in a single variable:</td>
+				</tr>
+				<tr>
+					<td>Object</td>
+					<td>Objects are variables too. But objects can contain many values.</td>
+				</tr>
+				<tr>
+					<td>Function</td>
+					<td>Functions are used to perform certain actions, and they are executed when something invokes
+						them
+						(for example when an event occurs).
+					</td>
+				</tr>
+				<tr>
+					<td>Date</td>
+					<td>Dates are written with the date constructor.</td>
+				</tr>
+				<tr>
+					<td>RegExp</td>
+					<td>Regular expressions are used to find certain characters in strings.</td>
+				</tr>
+			</table>
+		</section>
+		<section class="main-section" id="Operators">
+			<header>
+				<h1 id="Operators">Operators</h1>
+			</header>
+			<p>JavaScript has the following types of operators. This section describes the operators and contains
+				examples
+				of their usage.</p>
+			<table class="table table-bordered">
+				<tr>
+					<th style="width:10%">Operator</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>Arithmetic</td>
+					<td>Addition (+), Subtraction (-), Multiplication (*), Division (/), Remainder (%), Exponentiation
+						(**)
+					</td>
+				</tr>
+				<tr>
+					<td>Assignment</td>
+					<td>Simple assignment (=), Add and assignment (+=), Subtract and assignment (-=), Multiply and
+						assignment
+						(*=), Divide and assignment (/=), Remainder and assignment (%=), Exponentiation and assignment
+						(**=)
+					</td>
+				</tr>
+				<tr>
+					<td>Comparison</td>
+					<td>Equal (==), Not equal (!=), Strict equal (===), Strict not equal (!==), Greater than (>),
+						Greater
+						than or equal (>=), Less than (<), Less than or equal (<=) </td>
+				</tr>
+				<tr>
+					<td>Logical</td>
+					<td>Logical and (&&), Logical or (||), Logical not (!)</td>
+				</tr>
+				<tr>
+					<td>Bitwise</td>
+					<td>Bitwise AND (&), Bitwise OR (|), Bitwise XOR (^), Bitwise NOT (~), Left shift (<<), Right shift
+							(>>), Zero-fill right shift (>>>)
+					</td>
+				</tr>
+				<tr>
+					<td>String</td>
+					<td>Concatenation (+), Assignment (+=)</td>
+				</tr>
+				<tr>
+					<td>Conditional (ternary)</td>
+					<td>condition ? val1 : val2</td>
+				</tr>
+				<tr>
+					<td>Comma</td>
+					<td>var</td>
+				</tr>
+				<tr>
+					<td>Unary</td>
+					<td>delete, typeof, void, +, -, ++, --, !, ~, &, *, await</td>
+				</tr>
+				<tr>
+					<td>Relational</td>
+					<td>in, instanceof</td>
+				</tr>
+			</table>
+		</section>
+		<section class="main-section" id="Functions">
+			<header>
+				<h1 id="Functions">Functions</h1>
+			</header>
+			<p>A JavaScript function is a block of code designed to perform a particular task.</p>
+			<p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+			<p>Function definitions are hoisted to the top of the document.</p>
+			<p>Function expressions are not hoisted.</p>
+			<p>Function declarations are not hoisted.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+			<p>Function
+				expressions are loaded only when the interpreter reaches that line of code.</p>
+			<p>Function declarations are loaded before any code is executed.</p>
+		</section>
+	</main>
+
+</body>
+
+</html>
